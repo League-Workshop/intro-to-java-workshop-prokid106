@@ -9,27 +9,29 @@ public class FourSquare {
 Robot R = new Robot();
 	void go() {
 		// 4. Make the robot move as fast as possible
-R.setSpeed(200);
+R.setSpeed(101);
 		// 5. Set the pen width to 5
-R.setPenWidth(5);
+R.setPenWidth(1);
 		// 6. Use a for loop to repeat steps #7 to #8, four times...
-
+for (int i = 0; i<20000; i++) {
 			// 7. Set the pen color to random
-	
+	R.setRandomPenColor();
 			// 1. Call the drawSquare() method
 	drawSquare();
 			// 8. Turn the robot 90 degrees to the right
-
+R.turn(90);
+}
+R.move(200);
 	}
 
 	
 	void drawSquare() {
-		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
+		//JOptionPane.showMessageDialog(null, "this message is stupid!");
 		/* 3. Fill in the code to draw a square inside the method below. */
 		for (int i = 0; i<4; i++) {
 			R.penDown();
-			R.move(100);
-			R.turn(90);
+			R.move(30);
+			R.turn(20);
 		}
 		
 	}

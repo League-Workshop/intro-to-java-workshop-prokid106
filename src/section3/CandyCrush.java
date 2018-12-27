@@ -2,7 +2,7 @@ package section3;
 
 import javax.swing.JOptionPane;
 
-public class CandyCrush {
+public class  {
 
 	public static void main(String[] args) {
 		// 1. Using a pop-up, ask the user who they don't like
