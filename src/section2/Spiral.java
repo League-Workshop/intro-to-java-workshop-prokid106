@@ -12,16 +12,17 @@ public class Spiral {
 		// 3. Set the robot to go at max speed (100)
 		R.setSpeed(100);
 		// 4. Use a for loop to repeat steps #7 to #8, 75 times
-		for (int i = 0; i<3000; i++) {
+		for (int i = 0; i<15; i++) {
 			// 7. Change the pen color to random
 		R.setRandomPenColor();
 			// 6. Move the robot 5 times the loop counter (5*i)
 			R.move(5*i);
 			// 2. Turn the robot 360/7 degrees to the right
-		R.turn(360/7);
+		R.turn(360/3);
 			// 8. Set the pen width to i
-		R.setPenWidth(i);
+		R.setPenWidth(2);
 		}
 		R.move(100);
 	}
 }
+3
